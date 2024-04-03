@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+#world-map svg{
+    height: 80vh;
+    width: 100%;
+    margin-top: 125px;
+   
+}
+.container{
+    background-color: rgba(50, 50, 68);
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+
+#name{
+    position: absolute;
+    background-color: aliceblue;
+    width: fit-content;
+    opacity: 0;
+    border-radius: 5px;
+    border: 3px solid rgb(0, 0, 0);
+    padding: 5px;
+    font-size: 1.2rem;
+}
+#search{
+    position: absolute;
+    font-size: 18px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+}
+
+#search p{
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: white;
+}
+#search-box {
+    width: 100%;
+    max-width: 300px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.search-box::placeholder {
+    color: #aaa;
+}
+
+.search-box:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+@media only screen and (max-width: 600px) {
+    .container{
+        overflow: hidden;
+        max-width: 100vw;
+    }
+    #search {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #search p {
+        font-size: 20px;
+    }
+    #search-box {
+        width: 90%;
+        max-width: none;
+    }
+}
